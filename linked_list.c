@@ -1,81 +1,120 @@
-
 #include <stdio.h>
 #include <stdlib.h>
 #include "linked_list.h"
 
-Node* ll_create_node(int data) 
+Node* ll_create_node(int data)
 {
   Node *node = calloc(1, sizeof(Node));
-  node -> next = NULL;
   node -> data = data;
+  node -> next = NULL;
   return node;
 }
 
-Node* insert_at_start(Node *head, int data) 
+void ll_print_node(Node *head)
+{
+  Node *ptr = head;
+  while(ptr != NULL)
+    {
+      printf("%d  ", ptr -> data);
+      ptr = ptr -> next;
+    }
+    printf("\n");
+}
+
+Node* ll_find(Node *head, int data)
+{
+  Node *n = head;
+  for(; n != NULL && n->data != data; n= n-> next);
+    return n;
+}
+
+Node* insert_at_start(Node *head, int data)
 {
   Node *newNode = ll_create_node(data);
+  newNode -> data = data;
   newNode -> next = head;
   return newNode;
 }
 
-Node* ll_insert_before(Node *head, Node *mark, int data) 
+Node* insert_at_end(Node *head, int data)
 {
-  if (head == mark)
+  Node *newNode = ll_create_node(data);
+  newNode -> data = data;
+  Node *p = head;
+  while(p -> next != NULL)
+    {
+      p = p -> next;
+    }
+  p -> next = newNode;
+  newNode -> next =NULL;
+  return head;
+}
+
+Node* insert_after_node(Node *head, Node *node, int data)
+{
+  Node *newNode = ll_create_node(data);
+  newNode -> data = data;
+  newNode -> next = node -> next;
+  node -> next = newNode;
+  return head;
+}
+
+Node* insert_before_node(Node *head, Node *node, int data) 
+{
+  if (head == node)
     return insert_at_start(head, data);
   
-  Node *parent = NULL;
-  Node *n = head;
-  for (; n != NULL && n != mark; n = n->next)
-    parent = n;
+  Node* p = NULL;
+  Node* n = head;
+  for (; n != NULL && n != node; n = n -> next)
+    p= n;
 
-  if (n == mark) 
+  if (n == node) 
   {
     Node *newNode = ll_create_node(data);
-    newNode -> next = parent -> next; 
-    parent -> next = newNode;
+    newNode -> next = p -> next; 
+    p -> next = newNode;
   }
 
   return head;
 }
 
-Node* ll_find(Node *head, int data) 
+Node* delete_first(Node *head)
 {
-  Node *n = head;
-  for (; n != NULL && n-> data != data; n = n-> next);
-  return n;
+  Node *ptr = head;
+  head = head -> next;
+  free(ptr);
+ return head;
 }
 
-Node* ll_delete(Node *head, Node *node) {
-  if (head == NULL || node == NULL) 
-  return head;
-  
-  if (head == node) 
-  {
-    head = head -> next;
-    free(node);
-    return head;
-  }
-  
-  Node *parent = NULL;
-  Node *n = head;
-  for (; n != NULL && n != node; n = n-> next)
-    parent = n;
-
-  if ( n != NULL) 
-  {
-    parent -> next = n -> next;
-    free(n);
-  }
-
-  return head;
-}
-
-void ll_print(Node *head) 
+Node* delete_at_last(Node *head)
 {
-  Node *n = head;
-     for (; n != NULL; n = n -> next)
-       {
-    printf("%d ", n -> data);
-       }
-  printf("\n"); 
-}
+ Node *p = head;
+ Node *q = head -> next;
+ while(q->next != NULL)
+ {
+  p = p -> next;
+  q = q -> next;
+  }
+  p -> next = NULL;
+  free(q);
+  return head;
+  }
+
+Node* delete_by_value(Node *head, int data)
+{
+   Node *p = head;
+   Node *q = head -> next;
+ while(q-> data != data && q -> next != NULL)
+  {
+      p = p -> next;
+     q = q -> next;
+  }
+ 
+ if( q -> data = data)
+  {
+     p -> next = q -> next;
+      free(q);
+ return head;
+  }
+ }
