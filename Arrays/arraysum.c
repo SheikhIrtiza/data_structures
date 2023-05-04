@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main() {
-    int arr[] = {1, 2, 3, 4};
+    int arr[] = {1, 2, 3, 4}; 
     int size = sizeof arr / sizeof arr[0];
     int total = 0;
     printf("the sizeof arr %lu and the sizeof arr[0] %lu \n", sizeof arr, sizeof arr[0]);
