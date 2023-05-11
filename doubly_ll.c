@@ -24,6 +24,7 @@ void dll_insert_before(DNode *node, data value)
 {
   DNode *newNode = dll_create_node(value);
   DNode *OrigPrev = node -> prev;
+//   pointing the new node at the last of the linked list
   node -> prev = newNode;
   newNode -> prev = OrigPrev;
   newNode -> next = node;
