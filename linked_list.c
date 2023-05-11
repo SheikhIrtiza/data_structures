@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+// including linked list
 #include "linked_list.h"
 // creating node
 Node* ll_create_node(int data)
