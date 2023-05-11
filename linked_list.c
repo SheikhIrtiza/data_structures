@@ -1,9 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "linked_list.h"
-
+// creating node
 Node* ll_create_node(int data)
 {
+//   allocating memory
   Node *node = calloc(1, sizeof(Node));
   node -> data = data;
   node -> next = NULL;
@@ -27,7 +28,7 @@ Node* ll_find(Node *head, int data)
   for(; n != NULL && n->data != data; n= n-> next);
     return n;
 }
-
+// inserting the node at the beginning of the linked list
 Node* insert_at_start(Node *head, int data)
 {
   Node *newNode = ll_create_node(data);
