@@ -2,13 +2,14 @@
 #include "binary_tree.h"
 
 BinaryNode* btree_make_node(BinaryEntry data) {
+//   
   BinaryNode *node = calloc(1, sizeof(BinaryNode));
   node->data = data;
   node->left = NULL;
   node->right = NULL;
   return node;
 }
-
+// inserting the binary node on the left side of the Binary tree
 BinaryNode *btree_insert_left(BinaryNode *tree, BinaryEntry data){
   tree->left = btree_make_node(data);
   return tree;
