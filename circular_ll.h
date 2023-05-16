@@ -4,6 +4,7 @@
 typedef struct node
 {
   int data;
+  //creating node
   struct node *next;
 } Node;
 
