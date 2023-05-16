@@ -11,6 +11,7 @@ void bubble_sort(int *ptr, int size)
 	//printf("comparision:- %d", j);
 	if(ptr[j] > ptr[j+1])
 	  {  
+// 		using temp variable to swap the positions of two numbers with each other
 	      int temp = ptr[j];
 	      ptr[j] = ptr[j+1];
 	      ptr[j+1] = temp;
