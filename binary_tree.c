@@ -23,6 +23,7 @@ BinaryNode *btree_insert_right(BinaryNode *tree, BinaryEntry data){
 bool btree_is_empty(BinaryNode *btree) { return btree == NULL; }
 
 void btree_preorder(BinaryNode *tree, Visitor visitor) {
+//   if b tree is empty
   if (!btree_is_empty(tree)) {
     visitor(tree);
     btree_preorder(tree->left, visitor);
