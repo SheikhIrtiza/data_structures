@@ -6,7 +6,9 @@ int main(){
     int total = 0;
     printf("The sizeof arr %1u and the sizeof arr[0] % 1u \n",
            sizeof arr, sizeof arr[0]);
+//     making a loop to print the elements of array
     for(int i = 0; i < size; i++){
+//         using total variable to add the sum of the elements of array
         total = total + arr[i];
     }
 
