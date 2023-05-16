@@ -5,7 +5,7 @@
 
 int main()
 {
-   //
+   //making a node and setting its value to null
   Node *values = NULL;
   for(int i = 0; i < 10; i++)
     {
