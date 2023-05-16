@@ -2,7 +2,7 @@
 #include "binary_tree.h"
 
 BinaryNode* btree_make_node(BinaryEntry data) {
-//   
+//   allocating memory
   BinaryNode *node = calloc(1, sizeof(BinaryNode));
   node->data = data;
   node->left = NULL;
