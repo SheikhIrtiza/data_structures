@@ -1,3 +1,4 @@
+// program to find the factorial of a number
 #include <stdio.h>
 #include <assert.h>
 int fact(int num)
@@ -5,7 +6,7 @@ int fact(int num)
   assert( num >= 0);
   if(num == 1)
     return 1;
-  else
+  else 
     return (num*fact(num - 1));
 }
 
