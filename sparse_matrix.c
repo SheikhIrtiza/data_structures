@@ -8,6 +8,7 @@
 
  void init_matrix(int matrix[ROWS][COLS], int (*init)(int, int))
   {
+// 	 using for loops to hover over the arrays
     for(int i=0; i<ROWS; i++)
       {
 	for(int j=0; j<COLS; j++)
