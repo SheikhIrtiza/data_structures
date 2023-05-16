@@ -1,5 +1,6 @@
 #include <stdio.h>
 int main(){
+//     making an array
     int arr[] = {2, 4, 6, 8};
     int size = sizeof arr/sizeof arr[0];
     int total = 0;
