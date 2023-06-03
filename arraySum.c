@@ -10,7 +10,7 @@ int addElements(int *ptr, int size)
   return total;
 }
 
-
+ 
 int main()
 {
   int arr[] = {2, 4, 6, 8};
