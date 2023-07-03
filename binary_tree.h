@@ -7,7 +7,7 @@ typedef int BinaryEntry;
 
 typedef struct binary_node {
   struct binary_node *left;
-  struct binary_node *right;
+  struct binary_node *right; 
   BinaryEntry data;
 } BinaryNode;
 
