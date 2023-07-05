@@ -8,7 +8,7 @@ Node* cll_create_node(int data)
   node->next = node;
   node->data = data;
   return node;
-}
+} 
 
 Node* cll_insert_at_start(Node *head, int data)
 {
