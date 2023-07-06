@@ -8,7 +8,7 @@
    int right = high;
    int result = -1; // int result = 0;
 
-   while(left <= right)
+   while(left <= right) 
    {
       int  mid = (left+right)/2;
       int  midValue = arr[mid];
