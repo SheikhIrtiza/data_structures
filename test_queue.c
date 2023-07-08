@@ -7,7 +7,7 @@ void print_value(Node *node)
   printf("%d, ", node -> data);
 }
 
-void print_queue(Queue* q)
+void print_queue(Queue* q) 
 {
   queue_for_each(q, print_value);
   printf("\n");
