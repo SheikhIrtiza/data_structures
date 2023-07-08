@@ -14,7 +14,7 @@ void print_queue(Queue* q)
 }
 
 int main(void)
-{
+{ 
   Queue queue;
   Queue *q = &queue;
 
