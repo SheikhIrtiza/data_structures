@@ -7,7 +7,7 @@
    
      {
        if(ptr[i] == num)
-       return i;
+       return i; 
      }
    return -1;
  }
