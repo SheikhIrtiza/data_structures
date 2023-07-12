@@ -4,7 +4,7 @@
  int find_index(int *ptr, int size, int num)
  {
    for (int i=0; i<size; i++)
-  
+   
      {
        if(ptr[i] == num)
        return i;
