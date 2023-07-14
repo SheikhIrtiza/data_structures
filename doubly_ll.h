@@ -6,7 +6,7 @@ typedef int data;
 typedef struct double_node{
   data value;
   struct double_node *next;
-  struct double_node *prev;
+  struct double_node *prev; 
 }DNode;
 
 DNode* dll_create_node(data value);
