@@ -8,7 +8,7 @@ int main(){
            sizeof arr, sizeof arr[0]);
 //     making a loop to print the elements of array
     for(int i = 0; i < size; i++){
-//         using total variable to add the sum of the elements of array
+//         using total variable to add the sum of the elements of array 
         total = total + arr[i];
     }
 
