@@ -7,7 +7,7 @@
    int left = low;
    int right = high;
    int result = -1;
-
+ 
    while(left <= right)
    {
       int  mid = (left+right)/2;
