@@ -10,7 +10,7 @@ int main(void) {
     head = dll_insert_at_start(head, i);
 
   printf("Print the doubly linked list:- \n");
-  dll_print_list(head);
+  dll_print_list(head); 
 
   assert(dll_find(head, 25) == NULL);
 
