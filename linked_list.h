@@ -7,7 +7,7 @@ typedef struct node{
 }Node;
 
 Node* ll_create_node(int data);
-
+ 
 void ll_print_node(Node *head);
 
 Node* insert_at_start(Node *head, int data);
