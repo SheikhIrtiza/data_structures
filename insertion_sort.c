@@ -9,7 +9,7 @@ void insertion_sort(int *ptr, int size)
   while( j >= 0 && ptr[j] > key)//Loop for each comparision
     {
       ptr[j+1] = ptr[j];
-      j--;
+      j--; 
     }
        ptr[j+1] = key;
     }
