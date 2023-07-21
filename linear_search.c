@@ -2,7 +2,7 @@
  #include <stdbool.h>
 
  bool linear_search(int arr[], int size, int n)
- {
+ { 
    bool element_found = false;
    for(int i=0; i<size; i++)
      {
