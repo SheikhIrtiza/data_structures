@@ -6,7 +6,7 @@ Node* cll_create_node(int data)
 {
   Node *node = calloc(1, sizeof(Node));
   node->next = node;
-  node->data = data;
+  node->data = data; 
   return node;
 } 
 
