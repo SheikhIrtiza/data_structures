@@ -6,7 +6,7 @@ for(int i = 0; i<size; i++){
     if (ptr[i] == num)
     return i;
 
-     }
+     } 
      return -1;
 }
 
