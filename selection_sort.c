@@ -4,7 +4,7 @@ void selection_sort(int *ptr, int size)
 {
   for(int i = 0; i< size; i++)//For number of  pass.
     {
-      printf("Working on pass number :- %d\n", i+1);
+      printf("Working on pass number :- %d\n", i+1); 
       int min_index = i;
       for(int j = i+1; j<size; j++)// For number of comparisions.
 	{
