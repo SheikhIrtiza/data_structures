@@ -6,7 +6,7 @@
 
 static void error(const char* message)
 {
-  fprintf(stderr, "Queue error: %s\n", message);
+  fprintf(stderr, "Queue error: %s\n", message); 
   exit(-1);
 }
 
