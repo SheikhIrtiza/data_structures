@@ -11,7 +11,7 @@
        smallest = ptr[i];
      }
    }
-   return smallest;
+   return smallest; 
   
  }
 
