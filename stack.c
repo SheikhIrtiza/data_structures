@@ -5,7 +5,7 @@
 
 static void error(char* message) 
 {
-  fprintf(stderr, "Error: %s\n", message);
+  fprintf(stderr, "Error: %s\n", message); 
   //stderr / stdout :standard error message,used to print the output.
   exit(-1);
 }
