@@ -3,7 +3,7 @@
 #include "stack.h"
 
 void pop_and_print(Stack* stack)
-{
+{ 
    while (!stack_is_empty(stack))
    {
       StackEntry item;
