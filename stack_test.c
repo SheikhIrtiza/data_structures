@@ -10,7 +10,7 @@ void pop_and_print(Stack* stack)
       stack_pop(stack, &item);
      //stack_print(stack);//this wll remove each element removed.
       printf(" %c, ", item);
-   }
+   } 
    printf("\n");
 }
 
