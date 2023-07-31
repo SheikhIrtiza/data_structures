@@ -6,7 +6,7 @@ void print_visitor(BinaryNode *node) {
   printf("%d ", node->data);
 }
 int main(void) {
-  BinaryNode *tree = btree_make_node(1);
+  BinaryNode *tree = btree_make_node(1); 
   tree->left = btree_make_node(2);
   tree->right = btree_make_node(3);
   
