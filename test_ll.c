@@ -4,7 +4,7 @@
  
 int main()
  {
-  Node *values = NULL;
+  Node *values = NULL; 
   for(int i = 10; i > 0; i--)
   {
     values = insert_at_start(values, i);
