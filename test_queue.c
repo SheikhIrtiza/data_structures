@@ -3,7 +3,7 @@
 #include "queue.h"
 
 void print_value(Node *node)
-{
+{ 
   printf("%d, ", node -> data);
 }
 
