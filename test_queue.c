@@ -4,7 +4,7 @@
 
 void print_value(Node *node)
 { 
-  printf("%d, ", node -> data);
+  printf("%d, ", node -> data); 
 }
 
 void print_queue(Queue* q) 
