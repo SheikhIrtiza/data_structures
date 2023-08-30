@@ -3,7 +3,7 @@
 
 #include <stdbool.h>
 
-typedef int BinaryEntry;
+typedef int BinaryEntry; 
 
 typedef struct binary_node {
   struct binary_node *left;
